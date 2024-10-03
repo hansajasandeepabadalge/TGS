@@ -75,15 +75,31 @@ body {
 }
 
 .search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between input and button */
     margin-bottom: 20px;
 }
 
 .search-bar input {
-    width: 100%;
+    flex: 1; /* Take up the remaining space */
     padding: 10px;
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 5px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #45a049;
 }
 
 .student-table {
